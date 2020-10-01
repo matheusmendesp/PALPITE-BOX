@@ -42,6 +42,7 @@ rapidly building custom designs.
 ## Author:
 
 * **Tulio Faria** - [LinkedIn](https://www.linkedin.com/in/tuliofaria/)
+* **Matheus Mendes** - [LinkedIn](https://www.linkedin.com/in/matheusmendespp/)
 
 
 ## Licença
