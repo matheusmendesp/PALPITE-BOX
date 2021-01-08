@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <div className='bg-gray-300 p-4 shadow-md text-center'>
         <Link href='/pesquisa'>
-          <a className='px-2 hover:underline'>Pesquisa</a>
+          <a className='px-2 hover:underline'>Inscrição</a>
         </Link>
       </div>
     </React.Fragment>
