@@ -59,7 +59,7 @@ Por isso, estamos sempre abertos a ouvir a sua opinião.</p>
         <button className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow' onClick={save}>Salvar</button>
       </div>}
       {sucess && <div className='w-1/5 mx-auto'>
-        <p className='mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3'>Obrigado por contribuir com sua sugestão ou crítica.</p>
+        <p className='mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3'>Obrigado por se inscrever, aguardamos você.</p>
         {
           retorno.showCoupon && <div className='text-center border p-4 mb-4'>
             Seu cupom: <br />
