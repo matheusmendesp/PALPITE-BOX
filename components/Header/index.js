@@ -8,13 +8,16 @@ const Header = () => {
       <div className={styles.wrapper}>
         <div className='container mx-auto'>
           <Link href='/'>
-            <a><img className='mx-auto' src='/logo_palpitebox.png' alt='PalpiteBox' /></a>
+            <a><img className='mx-auto' src='/logo-header.png' alt='PIB' height='180' width='100.16' /></a>
           </Link>
         </div>
       </div>
-      <div className='bg-gray-300 p-4 shadow-md text-center'>
-        <Link href='/pesquisa'>
-          <a className='px-2 hover:underline'>Pesquisa</a>
+      <div className='bg-gray-00 p-4 shadow-md text-center'>
+        <Link href='/inscricao'>
+          <a className='px-2 hover:underline'>Inscrição</a>
+        </Link>
+        <Link href='/assistir'>
+          <a className='px-2 hover:underline'>Assitir Culto online</a>
         </Link>
       </div>
     </React.Fragment>

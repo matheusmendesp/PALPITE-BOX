@@ -4,11 +4,6 @@ import { fromBase64 } from '../../utils/base64'
 
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
-const genCupom = () => {
-  const code = parseInt(moment().format('YYMMDDHHmmssSSS')).toString(16).toUpperCase()
-  return code.substr(0, 4) + '-' + code.substr(4, 4) + '-' + code.substr(8, 4)
-}
-
 export default async (req, res) => {
   try {
     await doc.useServiceAccountAuth({
@@ -28,24 +23,21 @@ export default async (req, res) => {
     let Cupom = ''
     let Promo = ''
     if (mostrarPromocaoCell.value === 'VERDADEIRO') {
-      Cupom = genCupom()
-      Promo = textoCell.value
+      Cupom = 'TENTE NOVAMETE EM ALGUNS INSTANTES'
     }
 
     // Nome	Email	Whatsapp	Cupom	Promo
     await sheet.addRow({
       Nome: data.Nome,
-      Email: data.Email,
-      Whatsapp: data.Whatsapp,
-      Nota: parseInt(data.Nota),
+      Pedido: data.Pedido,
+      Culto: data.Culto,
       'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss'),
       Cupom,
       Promo
     })
     res.end(JSON.stringify({
-      showCoupon: Cupom !== '',
+      showText: Cupom !== '',
       Cupom,
-      Promo
     }))
   } catch (err) {
     console.log(err)

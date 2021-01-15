@@ -15,12 +15,12 @@ const Index = () => {
         Por isso, estamos sempre abertos a ouvir a sua opinião.
       </p>
       <div className='text-center my-12'>
-        <Link href='/pesquisa'>
+        <Link href='/inscricao'>
           <a className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow'>Se inscrever</a>
         </Link>
       </div>
       {!data && <p>Carregando...</p>}
-      {!error && data && data.showCoupon &&
+      {!error && data && data.showText &&
         <p className='my-12 text-center'>
           {data.message}
         </p>
