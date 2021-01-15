@@ -6,6 +6,7 @@ const Pesquisa = () => {
     Nome: '',
     Pedido: '',
     Culto: '',
+    Visitante: ''
   })
   const [sucess, setSuccess] = useState(false)
   const [retorno, setRetorno] = useState({})
@@ -37,6 +38,15 @@ const Pesquisa = () => {
         <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
         <label className='font-bold'>Pedido de oração:</label>
         <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Pedido de oração' onChange={onChange} name='Pedido' value={form.Pedido} />
+        
+
+        <label className='font-bold'>É Visitante?</label>
+        <select className='p-4 block shadow bg-blue-100 my-2 rounded' onChange={onChange} name='Visitante' value={form.Visitante}>
+          <option>É Visitante?</option>
+          <option value='Sim'> Sim </option>
+          <option value='Não'> Não </option>
+        </select>
+
 
         <label className='font-bold'>Culto:</label>
         <select className='p-4 block shadow bg-blue-100 my-2 rounded' onChange={onChange} name='Culto' value={form.Culto}>
@@ -52,16 +62,11 @@ const Pesquisa = () => {
         <button className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow' onClick={save}>Salvar</button>
       </div>}
       {sucess && <div className='w-1/5 mx-auto'>
-        <p className='mb-6 text-center font-bold px-4 py-3'>Trabalhando em parceria com Deus.</p>
+        <p className='mb-32 text-center bg-black-100 border-t border-b border-black-500 px-4 py-4'>Se Deus e Por nós quem será contra nós? <br/>
+        Romanos 8:31</p>
         {
           retorno.showText && <div className='mb-6 text-center bg-red-100 border-t border-b border-red-500 text-red-700 px-4 py-3'>
             <span className='font-bold text-2xl'>{retorno.Cupom}</span>
-          </div>
-        }
-        {
-          retorno.showText && <div className='text-center border p-4 mb-4'>
-            <span className='italic'>Se Deus e Por nós quem será contra nós? <br/>
-        Romanos 8:31</span>
           </div>
         }
       </div>}

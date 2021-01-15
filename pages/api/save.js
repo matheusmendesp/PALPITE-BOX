@@ -31,6 +31,7 @@ export default async (req, res) => {
       Nome: data.Nome,
       Pedido: data.Pedido,
       Culto: data.Culto,
+      Visitante: data.Visitante,
       'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss'),
       Cupom,
       Promo
