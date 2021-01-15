@@ -10,10 +10,19 @@ const Index = () => {
   return (
     <div>
       <PageTitle title='Seja bem-vindo' />
-      <p className='mt-12 text-center'>
-        O local X sempre busca por atender melhor seus clientes.<br />
-        Por isso, estamos sempre abertos a ouvir a sua opinião.
-      </p>
+        <p className='mt-12 text-center'>
+          Conforme decreto estadual bem como resolução da Secretaria de Saúde do Estado do São Paulo, iremos retomar os cultos presenciais seguindo as devidas orientações.
+            
+          <br/><br/><br/>
+            
+          Uma dessas orientações é o limite da capacidade do local, que poderá ser ocupado em até 30%. Com isso, poderemos reunir no máximo 80 pessoas, espalhadas por todo o templo. Para realizar esse controle, pedimos que você preencha os dados abaixo confirmando sua participação em um dos cultos. Esse cadastro é necessário apenas para os cultos que tradicionalmente reuniam mais que 200 pessoas.
+            
+          <br/><br/><br/>
+
+          <strong>
+          ATENÇÃO: preencha apenas se você tiver certeza que irá participar para não tirar o lugar de alguém que gostaria de vir.
+          </strong>
+        </p>
       <div className='text-center my-12'>
         <Link href='/inscricao'>
           <a className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow'>Se inscrever</a>
