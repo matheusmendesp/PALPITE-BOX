@@ -17,7 +17,7 @@ const Header = () => {
           <a className='px-2 hover:underline'>Inscrição</a>
         </Link>
         <Link href='/assistir'>
-          <a className='px-2 hover:underline'>Assitir Culto online</a>
+          <a className='px-2 hover:underline'>Assistir Culto online</a>
         </Link>
       </div>
     </React.Fragment>
