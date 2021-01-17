@@ -36,7 +36,7 @@ const Pesquisa = () => {
       {!sucess && <div className='w-1/5 mx-auto'>
         <label className='font-bold'>Seu nome:</label>
         <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
-        <label className='font-bold'>Pedido de oração:</label>
+        <label className='font-bold'>Pedido de oração (Opcional):</label>
         <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Pedido de oração' onChange={onChange} name='Pedido' value={form.Pedido} />
         
 
