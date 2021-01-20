@@ -51,12 +51,12 @@ const Pesquisa = () => {
         <label className='font-bold'>Culto:</label>
         <select className='p-4 block shadow bg-blue-100 my-2 rounded' onChange={onChange} name='Culto' value={form.Culto}>
           <option>Selecione um culto</option>
-          <option value='Culto de oração - 20/01/2021'> Culto de oração - 20/01/2021 </option>
           <option value='Domingo manhã - 24/01/2021'> Domingo manhã - 24/01/2021 </option>
           <option value='Domingo noite - 24/01/2021'> Domingo noite - 24/01/2021 </option>
           <option value='Culto de oração - 27/01/2021'> Culto de oração - 27/01/2021 </option>
           <option value='Domingo manhã - 31/01/2021'> Domingo manhã - 31/01/2021 </option>
           <option value='Domingo noite - 31/01/2021'> Domingo noite - 31/01/2021 </option>
+          <option value='Culto de oração - 03/02/2021'> Culto de oração - 03/02/2021 </option>
         </select>
 
         <button className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow' onClick={save}>Salvar</button>
