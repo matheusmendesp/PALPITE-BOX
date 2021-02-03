@@ -28,12 +28,6 @@ const Index = () => {
           <a className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow'>Inscreva-se</a>
         </Link>
       </div>
-      {!data && <p>Carregando...</p>}
-      {!error && data && data.showText &&
-        <p className='my-12 text-center'>
-          {data.message}
-        </p>
-      }
     </div>
   )
 }
