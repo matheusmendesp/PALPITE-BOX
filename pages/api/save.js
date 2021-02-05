@@ -23,7 +23,7 @@ export default async (req, res) => {
     let Cupom = ''
     let Vagas = ''
     if (mostrarPromocaoCell.value === 'VERDADEIRO') {
-      Cupom = 'TENTE NOVAMETE EM ALGUNS INSTANTES'
+      Cupom = 'PRAZO PARA INSCRIÇÃO PARA ESTE CULTO ENCERRADA, TENTE NOVAMENTE PARA SEMANA QUE VÊM.'
       Vagas = textoCell.value
     }
 
