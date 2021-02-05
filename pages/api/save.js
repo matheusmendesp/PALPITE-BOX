@@ -24,6 +24,7 @@ export default async (req, res) => {
     let Promo = ''
     if (mostrarPromocaoCell.value === 'VERDADEIRO') {
       Cupom = 'TENTE NOVAMETE EM ALGUNS INSTANTES'
+      Vagas = textoCell.value
     }
 
     // Nome	Email	Whatsapp	Cupom	Promo
@@ -34,7 +35,7 @@ export default async (req, res) => {
       Visitante: data.Visitante,
       'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss'),
       Cupom,
-      Promo
+      Vagas
     })
     res.end(JSON.stringify({
       showText: Cupom !== '',
