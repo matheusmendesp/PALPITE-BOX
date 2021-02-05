@@ -40,6 +40,7 @@ export default async (req, res) => {
     res.end(JSON.stringify({
       showText: Cupom !== '',
       Cupom,
+      Vagas
     }))
   } catch (err) {
     console.log(err)
